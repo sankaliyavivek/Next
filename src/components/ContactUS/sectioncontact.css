@@ -1,0 +1,94 @@
+.section_Contact{
+    margin: 20px 0px;
+     background-image: url(/src/assets/banner.png);
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-position-x: left;
+    background-position-y: center;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_form_one{
+    width: 40%;
+}
+
+.contact_form_two{
+    width: 60%;
+    /* border: 1px solid; */
+}
+
+.form h1{
+        color: var(--white_color);
+        text-align: center;
+        margin-bottom: 18px;
+}
+
+.form_main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid yellow; */
+    justify-content: center;
+    gap: 20px;
+} 
+
+.first_inp{
+    width: 100% !important;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+}
+
+.form_div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+
+.form_div input{
+    width: 48%;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+}
+
+.contact_textarea{
+    width: 100%;
+    display: flex;
+}
+.contact_textarea textarea{
+    border-radius: 4px !important;
+    padding: 10px;
+}
+.contact_button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+@media(max-width:980px){
+    .contact_form_one{
+        display: none;
+    }
+
+    .contact_form_two{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:460px){
+
+.form_div input{
+    width: 100%;
+}
+}   

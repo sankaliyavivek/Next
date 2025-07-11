@@ -1,0 +1,59 @@
+:root {
+    --coffe_color: #514E4E;
+}
+
+
+.content_box h1{
+    color: var(--blue_color);
+    font-size: 30px;
+    font-weight: 400;
+    padding: 0 !important;
+    margin: 20px 0px !important;
+
+}
+
+
+
+
+
+.content_service_text {
+    display: flex;
+    justify-content: center;
+}
+
+.content_service_text span {
+    font-size: 56.5px;
+    font-family: var(--signika-font);
+    font-weight: 600;
+    color: var(--blue_color);
+}
+
+
+
+.content_box {
+    box-shadow: rgb(188, 185, 185) 0px 0px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 35px;
+    border-radius: 5px;
+    /* border: 1px solid; */
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.content_box p {
+    padding: 0px !important;
+    margin: 0px !important;
+    color: var(--coffe_color);
+}

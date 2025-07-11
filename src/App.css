@@ -1,0 +1,53 @@
+*{
+     font-family: "Poppins", sans-serif;
+      font-family: "Signika", sans-serif;
+}
+
+:root{
+    --signika-font:"Signika",sans-serif;
+      --lightblue:#039CFF;
+      --white_color:white;
+      --blue_color :#0A5AD2;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: blue; */
+}
+
+.comman_button_white{
+    background-color: white;
+    color:  var(--lightblue);
+    border-radius: 29px;
+    border: none;
+    padding: 9px 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.comman_button_blue{
+    background-color: var(--lightblue);
+    color:  white;
+    border-radius: 29px;
+    border: none;
+    padding: 12px 24px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.comman_button_blue:hover{
+       background-color: var(--white_color);
+    color:  var(--blue_color);
+    transition: 0.5s;
+    transform: scale(1.01);
+}
+
+.comman_button_white:hover{
+      background-color: var(--blue_color);
+    color:  var(--white_color);
+     transition: 0.5s;
+    transform: scale(1.01);
+}

@@ -1,0 +1,61 @@
+    .section_card_head {
+        margin: 29px 0px 32px 0px;
+    }
+
+    .section_card_head h1 {
+        text-align: center;
+        color: var(--blue_color);
+
+    }
+
+
+    .degital_card {
+        text-align: center;
+        background: #B0DDFF;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .card_img_one,
+    .card_img_two,
+    .card_img_three,
+    .card_img_four,
+    .card_img_five,
+    .card_img_six {
+        max-width: 100%;
+        height: auto;
+
+    }
+
+
+
+    .section_card_one h3 {
+        color: var(--blue_color);
+        font-size: 29px;
+        font-family: var(--signika-font);
+        margin: 24px 0px;
+    }
+
+    .section_card_one p {
+        color: var(--coffe_color);
+        font-size: 20px;
+    }
+
+    .card_para {
+        display: flex;
+        gap: 20px;
+    }
+
+    .fa-caret-right {
+        color: var(--blue_color);
+        cursor: pointer;
+    }
+
+    .card_para p {
+        text-align: start;
+
+    }

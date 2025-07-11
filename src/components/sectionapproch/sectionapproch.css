@@ -1,0 +1,65 @@
+:root {
+    --bg_lightblue: #B0DDFF;
+}
+
+
+.sectionapproch {
+    margin: 58px 0px;
+    background-color: var(--bg_lightblue);
+    padding: 20px;
+
+
+}
+
+.approch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.approch_one,.approch_two{
+    width: 48%;
+}
+
+.approch_one img{
+    object-fit: cover;
+}
+
+.approch_two h1 {
+    font-size: 56px;
+    color: var(--blue_color);
+    text-align: center;
+}
+
+.approch_two p{
+    margin-top: 25px;
+    font-size: 22px;
+    line-height: 178%;
+    text-align: center;
+}
+
+
+
+
+@media(max-width:768px){
+    .approch{
+        gap: 20px;
+    }
+    .approch_one,.approch_two{
+        width: 100%;
+    }
+
+    .approch_two p{
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.approch_two h1 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+
+}
