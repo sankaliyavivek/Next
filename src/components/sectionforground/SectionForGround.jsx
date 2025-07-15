@@ -15,7 +15,7 @@ function SectionForGround() {
                             project needs with our team, we will get back asap
                         </p>
 
-                        <div style={{textAlign:"center"}}>
+                        <div className='forground_button'>
                             <button className='comman_button_blue'>Contact Us</button>
                         </div>
                     </div>

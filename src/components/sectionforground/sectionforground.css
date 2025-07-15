@@ -79,6 +79,9 @@
 }
 
 @media(max-width:480px){
+    .forground_button{
+        text-align: center;
+    }
  
  .ground-two p{
         font-size: 28px;

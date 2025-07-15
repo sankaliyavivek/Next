@@ -39,6 +39,7 @@
 .footer_contact p {
     color: var(--coffe_color);
     font-size: 20px;
+    cursor: pointer;
 }
 
 
@@ -52,8 +53,13 @@
 
 .foot_email p {
     margin: 0px !important;
+    cursor: pointer;
 }
 
+.footer_service p:hover,
+.footer_contact p:hover,.foot_email p:hover{
+    color:var(--blue_color);
+}
 
 .foot_email img {
     display: block;
