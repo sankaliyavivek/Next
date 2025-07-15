@@ -140,6 +140,7 @@
 
   .mobile-logo {
     display: flex;
+    height: auto;
     justify-content: center;
     width: 100%;
     margin-bottom: 30px;
@@ -147,7 +148,7 @@
 
   .mobile-logo img {
     height: 50px;
-    max-width: 150px;
+    max-width: 250px;
     object-fit: contain;
   }
 

@@ -16,7 +16,7 @@ function SectionForGround() {
                         </p>
 
                         <div className='forground_button'>
-                            <button className='comman_button_blue'>Contact Us</button>
+                            <a href="#contact"><button className='comman_button_blue'>Contact Us</button></a>
                         </div>
                     </div>
                 </div>

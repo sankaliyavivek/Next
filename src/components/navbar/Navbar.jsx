@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Logo from '../../assets/logo.png';
-import BlackLogo from '../../assets/bluelogo.png';
+import BlackLogo from '../../assets/backlogo.png';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 
@@ -39,7 +39,7 @@ function Navbar() {
           <span className="close-btn" onClick={toggleMenu}>&times;</span>
 
           <div className="mobile-logo">
-            <img src={Logo} alt="Logo" />
+            <img src={BlackLogo} alt="Logo" />
           </div>
 
           <ul className="list">
