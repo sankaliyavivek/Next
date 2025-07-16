@@ -58,8 +58,9 @@
 }
 
 .footer_service p:hover,
-.footer_contact p:hover,.foot_email p:hover{
-    color:var(--blue_color);
+.footer_contact p:hover,
+.foot_email p:hover {
+    color: var(--blue_color);
 }
 
 .foot_email img {
@@ -86,4 +87,14 @@
     .section_footer_one {
         width: 100%;
     }
+
+}
+
+@media(max-width:490px) {
+
+    .footer_service,
+    .footer_contact {
+        margin-top: 30px;
+    }
+
 }

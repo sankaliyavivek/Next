@@ -1,16 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useRef } from 'react';
 import Logo from '../../assets/logo.png';
 import BlackLogo from '../../assets/backlogo.png';
 import { Link } from 'react-router-dom';
 import './navbar.css';
+import gsap from 'gsap';
 
-function Navbar() {
+  function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+    const navRef = useRef(null);
+    const listRef = useRef(null);
+
 
   const toggleMenu = () => {
     setIsMobileMenuOpen(prev => !prev);
   };
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +24,19 @@ function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+
+
+useEffect(() => {
+  gsap.to(navRef.current, {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+    delay: 0.1,
+    stagger:0.6
+  });
+}, []);
 
   return (
     <>
@@ -29,7 +47,7 @@ function Navbar() {
       ></div>
 
       {/* Navbar */}
-      <div className={`nav ${scrolled ? 'scrolled' : ''}`}>
+      <div ref={navRef}  className={`nav ${scrolled ? 'scrolled' : ''}`}>
         <div className="logo">
           <img src={Logo} alt="Logo" />
         </div>
@@ -39,7 +57,7 @@ function Navbar() {
           <span className="close-btn" onClick={toggleMenu}>&times;</span>
 
           <div className="mobile-logo">
-            <img src={BlackLogo} alt="Logo" />
+            <img src={Logo} alt="Logo" />
           </div>
 
           <ul className="list">

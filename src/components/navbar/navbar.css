@@ -16,6 +16,8 @@
   align-items: center;
   justify-content: space-around;
   z-index: 1000;
+    opacity: 0;
+  transform: translateY(-50px);
 }
 
 .nav.scrolled {
@@ -62,6 +64,8 @@
 .list li a:hover{
     color: var(--lightblue);
 }
+
+
 
 /* Common Button */
 .comman_button_white {
@@ -114,7 +118,10 @@
     right: -100%;
     width: 100%;
     height: 100vh;
-    background-color: var(--white_color);
+    background-image: url(../../assets/banner.png);
+    background-repeat: no-repeat;
+     background-position-x: left;
+    background-position-y: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -135,7 +142,7 @@
     right: 25px;
     font-size: 36px;
     cursor: pointer;
-    color: black;
+    color: white;
   }
 
   .mobile-logo {
@@ -161,7 +168,7 @@
   .list li {
     padding: 12px 0;
     width: 100%;
-    border-bottom: 1px solid #eee;
+    /* border-bottom: 1px solid #eee; */
   }
 
   .list li a {
@@ -172,14 +179,16 @@
   }
 
   .list li a:hover{
-    color: var(--lightblue);
+    color: var(--white_color);
   }
 
-
-
   .menu-btn {
-    margin-top: 20px;
+    margin-top: 10px;
     align-self: flex-start;
+  }
+
+  .comman_button_white {
+    padding: 5px 10px;
   }
 
   .hamburger {
