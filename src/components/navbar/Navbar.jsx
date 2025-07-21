@@ -26,7 +26,6 @@ import gsap from 'gsap';
   }, []);
 
 
-
 useEffect(() => {
   gsap.to(navRef.current, {
     y: 0,

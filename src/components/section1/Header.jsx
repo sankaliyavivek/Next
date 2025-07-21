@@ -1,12 +1,29 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Navbar from '../navbar/Navbar'
 import './header.css'
+import gsap from 'gsap';
+
 
 
 function Header() {
+
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    gsap.to(headerRef.current, {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      delay: 0.9,
+      ease: 'power3.out',
+      stagger:1.5
+    });
+
+  }, [])
+
   return (
     <div className='section1'>
-        <Navbar></Navbar>
+      <Navbar></Navbar>
 
       <div className='header'>
 
@@ -14,19 +31,19 @@ function Header() {
 
           <div className='header_content'></div>
 
-          <div className='header_content_one'>
+          <div className='header_content_one' ref={headerRef}>
 
             <h1>
-              Welcome to Next Horizone – 
+              Welcome to Next Horizone –
               Your Trusted Digital Media & Marketing Partner
             </h1>
 
             <p>
-              we are dedicated to helping businesses of all sizes grow and thrive in the ever- 
-              evolving digital landscape. As a full-service digital marketing agency, we specialize 
-              in crafting personalized strategies that deliver real, measurable results. Our team of 
-              experts is passionate about leveraging the power of the internet to drive your 
-               business forward.
+              we are dedicated to helping businesses of all sizes grow and thrive in the ever-
+              evolving digital landscape. As a full-service digital marketing agency, we specialize
+              in crafting personalized strategies that deliver real, measurable results. Our team of
+              experts is passionate about leveraging the power of the internet to drive your
+              business forward.
             </p>
 
             <div className='header_button'>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './sectioncontent2.css'
 import GroupOne from '../../assets/Group2.png'
 import GroupTwo from '../../assets/Group.png'
@@ -6,9 +6,12 @@ import GroupThree from '../../assets/Groupone.png'
 import GroupFour from '../../assets/Vector1.png'
 import GroupFive from '../../assets/Group1.png'
 import GroupSix from '../../assets/Grouptwo.png'
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import gsap from 'gsap';
 
 
 
+gsap.registerPlugin(ScrollTrigger);
 const Arry = [
     {
         images: GroupOne,
@@ -46,6 +49,30 @@ const Arry = [
 
 
 function SectionContent2() {
+
+
+     const boxRefs = useRef([]);
+
+  useEffect(() => {
+    boxRefs.current.forEach((box, i) => {
+      gsap.fromTo(box,
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: box,
+            start: "top 70%", // when box top reaches 70% of viewport
+            toggleActions: "play reverse play reverse", // play when scrolling down, reverse when scrolling up
+          },
+        }
+      );
+    });
+  }, []);
+
+
     return (
         <div className='container'>
 
@@ -57,9 +84,9 @@ function SectionContent2() {
 
                 <div className='row mt-2 g-4'>
                     {
-                        Arry.map((data) => (
+                        Arry.map((data,index) => (
                             <div className='col-lg-4' key={data.head}>
-                                <div className='content_box'>
+                                <div className='content_box' ref={(el) => (boxRefs.current[index] = el)}>
                                     <span>
                                         <img src={data.images} className='img-fluid' alt="" />
                                     </span>

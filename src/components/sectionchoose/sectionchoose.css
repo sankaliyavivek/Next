@@ -1,8 +1,11 @@
-
+html {
+  scroll-behavior: smooth;
+}
 
 .sectionchoose{
     padding: 20px;
     margin: 20px 0px;
+   
 }
 
 
@@ -15,6 +18,8 @@
 }
 
 .choose{
+     overflow-x: hidden;
+    overflow-y: hidden;
        display: flex;
        flex-wrap: wrap;
        justify-content: space-between;
