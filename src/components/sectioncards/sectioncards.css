@@ -8,6 +8,11 @@
 
     }
 
+    .section_card_one {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
 
     .degital_card {
         text-align: center;
@@ -30,7 +35,6 @@
         height: auto;
 
     }
-
 
 
     .section_card_one h3 {

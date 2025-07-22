@@ -8,14 +8,9 @@ import instaimage from '../../assets/insta.svg';
 import Linkdineimage from '../../assets/linkdin.png';
 
 
-
-
-
 function Footer() {
     return (
         <div className='section_footer'>
-
-
             <div className='container-fluid'>
                 <div className='section_footer_div'>
                     <div className='section_footer_one'>

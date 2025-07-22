@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: space-around;
   z-index: 1000;
-    opacity: 0;
+  opacity: 0;
   transform: translateY(-50px);
 }
 
@@ -58,12 +58,12 @@
 .list li a {
   text-decoration: none;
   font-size: 18px;
-  color: var(--white_color);
+  color: var(--white_color) !important;
 }
 
-.list li a:hover{
+/* .list li a:hover{
     color: var(--lightblue);
-}
+} */
 
 
 
@@ -98,7 +98,7 @@
 
 @media screen and (max-width: 768px) {
     .nav.scrolled .list li a {
-  color: black;
+  color: var(--white_color);
 }
   .nav-overlay {
     display: none;
@@ -178,9 +178,9 @@
     display: block;
   }
 
-  .list li a:hover{
-    color: var(--white_color);
-  }
+  /* .list li a:hover{
+    color: var(--lightblue) !important;
+  } */
 
   .menu-btn {
     margin-top: 10px;
