@@ -14,9 +14,8 @@ function SectionCards() {
                 <div className='section_card_head'>
                     <h1>Comprehensive Digital Marketing Services</h1>
                 </div>
-
+                
                 <div className='section_card_boxs row gy-4'>
-
                     <div className='section_card_one col-lg-4'>
                         <div className='degital_card'>
                             <div>
